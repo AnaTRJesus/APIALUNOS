@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Consumir API PHP com JS</title>
+    </head>
+    <body>
+        <h1>Lendo dados do banco...</h1>
+
+        <script>
+            
+            const url = 'http://localhost/escola/api/post/alunos.php';
+
+            fetch(url).then(function(resp){
+                return resp.json();
+            }).then(function(data){
+                console.log(data);
+            });
+
+
+        </script>
+
+    </body>
+</html>
